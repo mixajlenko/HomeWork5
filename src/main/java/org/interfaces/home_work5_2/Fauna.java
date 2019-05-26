@@ -20,22 +20,25 @@ public class Fauna implements Swimable,Flyable{
         }
 
     }
-     static class ClownFish implements IFish {
+
+    static class ClownFish implements IFish {
 
         @Override
         public void swim() {
             System.out.println("All of fish can swim.\nBut not all of them know it:D\n");
         }
-     }
-     static class Shark implements IFish {
+    }
+
+    static class Shark implements IFish {
 
         @Override
         public void swim() {
             System.out.println("I can swim all my life.\n");
         }
 
-     }
-     static class Duck implements IBird {
+    }
+
+    static class Duck implements IBird {
 
         @Override
         public void fly() {
@@ -52,15 +55,16 @@ public class Fauna implements Swimable,Flyable{
             System.out.println("KRYAKRYA\n");
         }
 
-        public void run(){
+        public void run() {
             System.out.println("run! vzhhhhh\n");
         }
 
-        public void meme(){
+        public void meme() {
             System.out.println("I can everything!\n");
         }
-     }
-     static class Eagle implements IBird {
+    }
+
+    static class Eagle implements IBird {
         @Override
         public void fly() {
             System.out.println("I can fly very height.\n");
@@ -75,8 +79,9 @@ public class Fauna implements Swimable,Flyable{
         public void sing() {
             System.out.println("My song is very loud.");
         }
-     }
-     static class Lion implements IAnimal {
+    }
+
+    static class Lion implements IAnimal {
 
         @Override
         public void run() {
@@ -93,8 +98,9 @@ public class Fauna implements Swimable,Flyable{
             System.out.println("GRRRRRR! I`m a KING of animal!\n");
         }
 
-     }
-     static class Penguin implements IBird {
+    }
+
+    static class Penguin implements IBird {
         @Override
         public void fly() {
             System.out.println("Everyone think what i can`t fly.\n");
@@ -109,8 +115,9 @@ public class Fauna implements Swimable,Flyable{
         public void sing() {
             System.out.println("gulugulu\n");
         }
-     }
-     static class Wolf implements IAnimal {
+    }
+
+    static class Wolf implements IAnimal {
         @Override
         public void run() {
             System.out.println("run run run\n");
@@ -125,7 +132,7 @@ public class Fauna implements Swimable,Flyable{
         public void say() {
             System.out.println("I`m volchara. Prepare your bochok for kus`\n");
         }
-     }
+    }
 
     @Override
     public void canFly() {

@@ -14,7 +14,9 @@ public class Specifications {
             app(userInput.nextLine());
         }
     }
+
     Fauna f = new Fauna();
+
     private void app(String nextLine) {
         switch (nextLine) {
             case ("Animal"):
@@ -39,7 +41,8 @@ public class Specifications {
                         w.swim();
                         w.say();
                         break;
-                } return;
+                }
+                return;
             case ("Bird"):
                 System.out.println("Choose your bird: Penguin, Duck, Eagle.");
                 String choiseBird = userInput.nextLine();
@@ -61,7 +64,8 @@ public class Specifications {
                         e.sing();
                         e.swim();
                         break;
-                } return;
+                }
+                return;
             case ("Fish"):
                 System.out.println("Choose your fish: Shark, ClownFish.");
                 String choiseFish = userInput.nextLine();
@@ -74,7 +78,8 @@ public class Specifications {
                         Fauna.ClownFish c = new Fauna.ClownFish();
                         c.swim();
                         break;
-                } return;
+                }
+                return;
             case ("Swimable"):
                 System.out.println("Enter your entity:\n(Duck, Penguin, Shark, ClownFish, Lion, Wolf)");
                 String swimable = userInput.nextLine();
@@ -104,7 +109,8 @@ public class Specifications {
                     case ("ClownFish"):
                         f.canSwim();
                         break;
-                } return;
+                }
+                return;
             case ("Flyable"):
                 System.out.println("Enter your entity:\n(Duck, Penguin, Eagle)");
                 String flyable = userInput.nextLine();
@@ -121,7 +127,8 @@ public class Specifications {
                     case ("Eagle"):
                         f.canFly();
                         break;
-                } return;
+                }
+                return;
         }
     }
 }
