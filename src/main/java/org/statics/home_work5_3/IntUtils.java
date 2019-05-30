@@ -7,19 +7,19 @@ public class IntUtils {
     private IntUtils() {
     }
 
-    static int plus(int a, int b) {
+   public static int plus(int a, int b) {
         int newPlus = a + b;
 
         return newPlus;
     }
 
-    static int minus(int a, int b) {
+   public static int minus(int a, int b) {
         int newMinus = a - b;
 
         return newMinus;
     }
 
-    static int pow(int number, int pow) {
+   public static int pow(int number, int pow) {
 
         int newPow = (int) Math.pow(number, pow);
         return newPow;

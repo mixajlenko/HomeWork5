@@ -1,26 +1,28 @@
 package org.abstracts.home_work5_1;
 import java.util.Scanner;
 
-public class StringPrinterDemo extends AbstractStringPrinter {
+public class StringPrinterDemo {
     Scanner inputReader = new Scanner(System.in);
     private boolean lifeCycle = true;
 
     public void application() {
         while (lifeCycle) {
             System.out.println("Please enter some string");
-            print(inputReader.nextLine());
+            transformation(inputReader.nextLine());
         }
     }
 
-    public void print(String str) {
+    public void transformation (String str) {
         System.out.println("Please enter string printer type (U - upper, L - lower)");
         String tp = inputReader.nextLine();
         switch (tp) {
             case ("U"):
-                System.out.println("result is:" + str.toUpperCase());
+                UpperStringPrinter getUp = new UpperStringPrinter();
+                getUp.print(str);
                 break;
             case ("L"):
-                System.out.println("result is:" + str.toLowerCase());
+                LowerStringPrinter getLow = new LowerStringPrinter();
+                getLow.print(str);
                 break;
             default:
                 System.out.println("result is:" + str);
